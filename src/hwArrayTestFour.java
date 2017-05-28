@@ -21,9 +21,7 @@ public class hwArrayTestFour {
                 int rowInputCustomizedRow = importLetter.nextInt();
                 System.out.println("Please enter the colum");
                 int rowInputCustomizedColum = importLetter.nextInt();
-                System.
-
-                arrayThree [r][c] = ;
+                System.out.println(arrayThree[r][c]);
             }
         }
 
