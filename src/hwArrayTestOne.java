@@ -24,7 +24,7 @@ public class hwArrayTestOne {
 
         for (int cc = 0; cc < arrayThree.length; cc ++) {
             for (int rr = 0; rr < arrayThree[0].length; rr ++) {
-                System.out.print(arrayThree[cc][rr] + " | ");
+                System.out.print(arrayThree[cc][rr] + "\n");
 
             }
             System.out.println();
