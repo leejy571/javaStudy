@@ -29,7 +29,6 @@ public class importTxtFileFive {
             int[][] arrayTwo = new int[secondArrayRow][secondArrayColumn];
             System.out.println("Your arrays are " + secondArrayRow + " by " + secondArrayColumn);
 
-
             for (Integer number : list) {
                 for (int rTwo = 0; rTwo < arrayTwo.length; rTwo++) {
                     for (int cTwo = 0; cTwo < arrayTwo[0].length; cTwo++) {
@@ -39,19 +38,19 @@ public class importTxtFileFive {
                     }
                 }
             }
+
             for (int rTwo = 0; rTwo < arrayTwo.length; rTwo++) {
                 for (int cTwo = 0; cTwo < arrayTwo[0].length; cTwo++) {
                     System.out.println(arrayTwo[rTwo][cTwo]);
                 }
                 System.out.println();
             }
-        }
-        catch(IOException ie){
-                System.out.println(ie);
-            }
-        }
 
+        } catch(IOException ie){
+            System.out.println(ie);
+        }
     }
+}
 
 
 
