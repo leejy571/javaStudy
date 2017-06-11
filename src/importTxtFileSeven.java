@@ -1,33 +1,16 @@
 /**
  * Created by cad113 on 6/7/17.
  */
-import javax.annotation.processing.FilerException;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.StringTokenizer;
+import java.util.Scanner;
 public class importTxtFileSeven {
-    static File f;
-    static Scanner s;
-    static ArrayList<String> file (File f, Scanner s) {
-        f = new File ("/home/cad113/Desktop/arrayOne.txt");
+    public static void main(String[] args) {
+        System.out.println("Please enter a sentence.");
+        Scanner s = new Scanner(System.in);
+        String sentenceInput = s.nextLine();
+        String line = null;
 
-        try {
-            s = new Scanner(f);
-        }
-        catch (FileNotFoundException ex) {
-            System.out.println("File not found.");
-        }
-        ArrayList<String> word = new ArrayList<String>();
-        while(s.hasNextInt()){
-            String str = s.next();
-            theword.add(str);
-        }
-        return theWord;
+        StringTokenizer stringTokenizer = new StringTokenizer(sentenceInput);
+        System.out.println("The word counts are " + stringTokenizer.countTokens());
     }
-    public static void main (String[] args) {
-        ArrayList<String> fileWords;
-        fileWords=words(s,f);
-        System.out.println(fileWords);
-    }
-
 }
