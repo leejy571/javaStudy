@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class importTxtFileFive {
     public static void main(String[] args) {
-        String path = "/home/cad221/Desktop/arrayOne.txt";
+        String path = "/home/cad211/Desktop/arrayOne.txt";
         try {
             FileReader file = new FileReader(path);
             BufferedReader input = new BufferedReader(file);
