@@ -23,8 +23,6 @@ public class input {
                 System.out.println(st.nextToken());
             }
         }
-
-
         bufferedReader.close();
     }
 
