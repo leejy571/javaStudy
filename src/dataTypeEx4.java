@@ -7,21 +7,26 @@ public class dataTypeEx4 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the mintues.");
         int input = scanner.nextInt();
-        System.out.println(calculate(input));
+
+        int minToDay = input / 1440;
+        int dayToYear = minToDay / 365;
+        int leftDays = minToDay % 365;
+
+        if (input < 1440) {
+            System.out.println(input + " minutes is approximately " + minToDay + " days.");
+        }
+        else if (minToDay > 365) {
+            System.out.println(input + " minutes is approximately " + dayToYear + " years " + leftDays + " days.");
+
+        }
     }
 
-    public static int calculate(int n) {
-        int day = 0;
-        int year = 0;
-        if (n > 60) {
-            day = n / 60;
-            if (day >= 365) {
-                year = day / 365;
-            }
-            else if (day < 365) {
-                return day;
-            }
-        }
-        return year;
-    }
 }
+/*
+4. Write a Java program to convert minutes into a number of years and days. Go to the editor
+
+        Test Data
+        Input the number of minutes: 3456789
+        Expected Output :
+        3456789 minutes is approximately 6 years and 210 days
+*/
