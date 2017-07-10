@@ -13,7 +13,6 @@ public class conditionalExercise7 {
         int month = s.nextInt();
         System.out.println("Input a Year");
         int year = s.nextInt();
-
         System.out.println(YearMonth.of(year, month));
 
         }
